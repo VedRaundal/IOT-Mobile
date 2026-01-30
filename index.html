@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Mobile as an IoT Device</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <script src="https://unpkg.com/feather-icons"></script>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <video class="bg-video" autoplay muted loop playsinline>
+        <source src="bg-video.mp4" type="video/mp4">
+      </video>
+      
+<header class="hero">
+  <h1>MOBILE <span>AS AN IoT DEVICE</span></h1>
+  <p>Interactive architecture of smartphones in IoT ecosystems</p>
+</header>
+
+<section class="architecture">
+
+  <!-- PHONE -->
+  <div class="phone">
+    <img src="phone.png" alt="Mobile IoT Phone">
+  </div>
+
+  <!-- LAYERS -->
+  <div class="layers">
+
+    <div class="layer" onclick="toggle(this)">
+      <h3><i data-feather="activity"></i> Perception Layer</h3>
+      <p>Sensors that collect real-world data</p>
+      <ul>
+        <li>Accelerometer</li>
+        <li>GPS</li>
+        <li>Camera</li>
+        <li>Microphone</li>
+        <li>Light & Proximity Sensors</li>
+      </ul>
+      <a class="layer-link"
+         href="https://developer.android.com/guide/topics/sensors/sensors_overview"
+         target="_blank">Learn more →</a>
+    </div>
+
+    <div class="layer" onclick="toggle(this)">
+      <h3><i data-feather="wifi"></i> Transport Layer</h3>
+      <p>Wireless communication technologies</p>
+      <ul>
+        <li>Wi-Fi</li>
+        <li>Bluetooth / BLE</li>
+        <li>4G / 5G Cellular</li>
+        <li>NFC</li>
+      </ul>
+      <a class="layer-link"
+         href="https://www.cloudflare.com/learning/network-layer/what-is-the-network-layer/"
+         target="_blank">Learn more →</a>
+    </div>
+
+    <div class="layer" onclick="toggle(this)">
+      <h3><i data-feather="cpu"></i> Processing Layer</h3>
+      <p>Local computation & middleware</p>
+      <ul>
+        <li>Android / iOS</li>
+        <li>Edge Computing</li>
+        <li>Data Pre-processing</li>
+        <li>Local Analytics</li>
+      </ul>
+      <a class="layer-link"
+         href="https://azure.microsoft.com/en-in/resources/cloud-computing-dictionary/what-is-edge-computing/"
+         target="_blank">Learn more →</a>
+    </div>
+
+    <div class="layer" onclick="toggle(this)">
+      <h3><i data-feather="cloud"></i> Application Layer</h3>
+      <p>Cloud, servers & analytics</p>
+      <ul>
+        <li>Cloud Platforms</li>
+        <li>MQTT / HTTP Servers</li>
+        <li>REST APIs</li>
+        <li>Data Analytics</li>
+      </ul>
+      <a class="layer-link"
+         href="https://mqtt.org/"
+         target="_blank">Learn more →</a>
+    </div>
+
+  </div>
+</section>
+
+<!-- PROTOCOLS -->
+<section class="protocols">
+  <h2 style="color: #f0ebeb;">Protocols Used</h2>
+  <div class="chips">
+    <a href="https://mqtt.org/" target="_blank">MQTT</a>
+    <a href="https://restfulapi.net/" target="_blank">HTTP / REST</a>
+    <a href="https://www.bluetooth.com/learn-about-bluetooth/tech-overview/" target="_blank">BLE</a>
+    <a href="https://nfc-forum.org/" target="_blank">NFC</a>
+  </div>
+</section>
+
+<!-- APPLICATIONS -->
+<section class="usecases">
+  <h2 style="color: #f0ebeb;">Real-World Applications</h2>
+
+  <div class="cards">
+    <a class="card" href="https://www.ibm.com/topics/smart-home" target="_blank">🏠 Smart Home Control</a>
+    <a class="card" href="https://www.who.int/health-topics/digital-health" target="_blank">❤️ Health Monitoring</a>
+    <a class="card" href="https://www.gps.gov/" target="_blank">📍 Location Tracking</a>
+    <a class="card" href="https://www.ibm.com/topics/industrial-iot" target="_blank">🏭 Industrial Monitoring</a>
+    <a class="card" href="https://developer.android.com/" target="_blank">📱 IoT Mobile Apps</a>
+    <a class="card" href="https://www.ibm.com/topics/smart-cities" target="_blank">🏙 Smart City Systems</a>
+  </div>
+</section>
+
+<footer>
+  <p>Designed as an Interactive IoT Architecture Demo by Ved Raundal - 1032222638</p>
+</footer>
+
+<script src="script.js"></script>
+<script>feather.replace()</script>
+
+</body>
+</html>
